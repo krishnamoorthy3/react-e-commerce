@@ -1,0 +1,27 @@
+
+.hp-swiper-c-wrapper{
+    border: 1px solid #E3E3E3;
+    padding: 10px;
+    border-radius: 10px;
+}
+.hp-disc-conte{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+.hp-disc-conte p:nth-child(2){
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px ;
+    color: #333;
+    font-weight: bold;
+}
+.swiper-button-prev, .swiper-button-next{
+    background: #E3E3E3;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}

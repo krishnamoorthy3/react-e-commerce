@@ -1,0 +1,34 @@
+.navbar-links-ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+
+.navbar-search-wrapper .nav-scr-inp,
+.navbar-search-wrapper .nav-scr-btn{
+    border: 0;
+    background: transparent;
+    border: 1px solid #808080;
+    padding: 6px 10px;
+    color: #808080;
+}
+.navbar-search-wrapper .nav-scr-inp{
+    width: 50%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-right: 0;
+}
+.navbar-search-wrapper .nav-scr-btn{
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-left: 0;
+}
+.navbar-search-wrapper .nav-scr-inp:focus-within{
+    outline: none;
+}
+.navbar-links-ul li .nav-link{
+    color: #000;
+    text-align: none;
+}
