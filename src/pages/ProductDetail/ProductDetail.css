@@ -1,0 +1,20 @@
+.product-detail-cont-wrapper h1,
+.product-detail-cont-wrapper h2,
+.product-detail-cont-wrapper h3,
+.product-detail-cont-wrapper h4,
+.product-detail-cont-wrapper h5,
+.product-detail-cont-wrapper h6{
+    font-weight: bold;
+}
+.product-detail-cont-wrapper p{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.proddetail-of-y{
+	position: sticky;
+	display: block;
+	top: 40px;
+	z-index: 1;
+}

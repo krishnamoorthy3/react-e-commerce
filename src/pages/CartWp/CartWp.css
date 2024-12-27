@@ -1,0 +1,26 @@
+.mr-2{
+    margin-right: 10px;
+}
+.wish-content-wrapper h5{
+    font-weight: bold;
+}
+.cart-incdec-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cart-incdec-btn{
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 16px;
+}
+.cartinc-inp{
+    border: 1px solid #808080;
+    width: 55px;
+}

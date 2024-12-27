@@ -5,7 +5,10 @@
     justify-content: end;
 }
 
-
+.navbar-wrapper{
+    padding: 20px 0;
+    box-shadow: 0 8px 6px -4px #88888838;
+}
 .navbar-search-wrapper .nav-scr-inp,
 .navbar-search-wrapper .nav-scr-btn{
     border: 0;
