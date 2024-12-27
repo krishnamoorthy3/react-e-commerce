@@ -5,7 +5,7 @@ import brndimg from "/src/assets/iphone/b.webp"
 import "./ProductDetail.css"
 import PropTypes from "prop-types";
 import CartButton from "../CartButton/CartButton"
-const ProductDetail = ({ items }) => {
+const ProductDetail = ({ items ,handelcart}) => {
     const { id, cat } = useParams()
     const releatedproduct = items.filter(item => (item.id != id && item.category.includes(cat) || item.id != id && item.description.includes(cat)));
     const productdetail = items.filter(item => item.id == id)
@@ -33,7 +33,7 @@ const ProductDetail = ({ items }) => {
                                             1 year warranty for phone and 1 year warranty for in Box Accessories.</p>
                                     </div>
                                     <div className="mt-5">
-                                        <CartButton/>
+                                        <CartButton category={cat} id={item.id} handelcart={handelcart}/>
                                     </div>
                                     <div className="row my-5 align-items-center">
                                         <div className="col-md-6">
@@ -144,5 +144,6 @@ ProductDetail.propTypes = {
             description: PropTypes.string.isRequired
         })
     ).isRequired,
+    handelcart:PropTypes.func
 }
 export default ProductDetail

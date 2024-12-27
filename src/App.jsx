@@ -1319,16 +1319,41 @@ const App = () => {
             }
         ]
     )
+    const [cartitem,setCartitem]=useState(JSON.parse(localStorage.getItem("cartitem"))||[])
+    const [wishlist,setWishList]=useState(JSON.parse(localStorage.getItem("wishlist"))||[])
+    const localStorages=(name,data)=>{
+        localStorage.setItem(name,JSON.stringify(data))
+        setCartitem(data)
+    }
+    const handelcart=(id,category)=>{
+        const existingItem = cartitem.find(item => item.id === id);
+        if (existingItem) {
+            const updatedCart = cartitem.map(item =>
+                item.id === id
+                    ? { ...item, cartquantity: item.cartquantity + 1 }
+                    : item
+            );
+            localStorages("cartitem",updatedCart);
+        } else {
+            const newCart = {
+                id: id,
+                category: category,
+                cartquantity: 1,
+            };
+            const productdata=[...cartitem, newCart]
+            localStorages("cartitem",productdata)
+        }
+    }
     return (
         <>
-            <Navbar />
+            <Navbar cartitem={cartitem} />
             <main>
                 <Routes>
                     <Route path="/" element={<Home items={items} />} />
-                    <Route path="/Product/:id" element={<Product items={items} />} />
-                    <Route path="/Cart" element={<Cart/>} />
-                    <Route path="/WishList" element={<WishList />} />
-                    <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} />} />
+                    <Route path="/Product/:id" element={<Product items={items} />}/>
+                    <Route path="/Cart" element={<Cart items={items} handelcart={handelcart} cartitem={cartitem} localStorages={localStorages}/>}  />
+                    <Route path="/WishList" element={<WishList/>} />
+                    <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} handelcart={handelcart}/>} />
                 </Routes>
             </main>
             <Footer/>

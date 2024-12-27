@@ -12,7 +12,7 @@ const WishList = () => {
                         <div className="my-5">
                             <div className="row row-gap-3">
                                 <div className="col-md-6">
-                                    <CartWp IncDec={false}/>
+                                    <CartWp IncDec={false} />
                                     
                                 </div>
                             </div>

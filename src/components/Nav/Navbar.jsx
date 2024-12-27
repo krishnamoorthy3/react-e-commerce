@@ -5,7 +5,8 @@ import "./Navbar.css";
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 import { useNavigate  } from "react-router-dom";
-const Navbar = () => {
+import PropTypes from "prop-types";
+const Navbar = ({cartitem}) => {
     const [searchprod,setSearchprod]=useState("")
     const navigate = useNavigate();
     const searchProduct=(e)=>{
@@ -36,10 +37,13 @@ const Navbar = () => {
                                         <NavLink to="/" className="nav-link">Home</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/Cart" className="nav-link">Cart</NavLink>
+                                        <NavLink to="/Cart" className="nav-link nav-cqpa">Cart 
+                                            <span className="nav-cq">{cartitem.length}</span>
+                                        </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/WishList" className="nav-link">WishList</NavLink>
+                                        <NavLink to="/WishList" className="nav-link nav-cqpa">WishList
+                                        <span className="nav-cq">3</span></NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -50,5 +54,7 @@ const Navbar = () => {
         </>
     );
 };
-
+Navbar.propTypes={
+    cartitem:PropTypes.array.isRequired
+}
 export default Navbar;
