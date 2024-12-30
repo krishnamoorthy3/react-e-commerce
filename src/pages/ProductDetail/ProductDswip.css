@@ -1,9 +1,11 @@
-#thumb-swip-img .swiper-slide{
+/* #thumb-swip-img  .swiper-slide{
     width: 100% !important;
     margin: 0px 0px 16px;
     border: 1px solid #dfdfdf;
     padding: 5px;
 }
+     */
+
 #main-swip-img .swiper-slide{
     border: 1px solid #dfdfdf;
     padding: 15px;
@@ -11,4 +13,12 @@
 #thumb-swip-img  .swiper-slide-thumb-active{
     opacity: .8;
     border: 2px solid #000000;
+}
+@media only screen and (min-width: 768px) {
+    #thumb-swip-img .swiper-wrapper .swiper-slide {
+        width: 100% !important;
+        margin: 0px 0px 16px;
+        border: 1px solid #dfdfdf;
+        padding: 5px;
+    }
 }

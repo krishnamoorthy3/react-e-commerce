@@ -18,3 +18,8 @@
 	top: 40px;
 	z-index: 1;
 }
+@media only screen and (max-width:767px) {
+    .product-detail-cont-wrapper{
+        margin-top: 25px;
+    }
+}

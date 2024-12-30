@@ -4,7 +4,8 @@ import FilterComp from "./FilterComp";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Product.css"
-const Product = ({ items }) => {
+import Wishlistbtn from "../WishListbtn/Wishlistbtn";
+const Product = ({ items ,handelWishlist , wishlistbtncolor}) => {
     const { id } = useParams();
     const [product, setProduct] = useState([]);
 
@@ -31,7 +32,7 @@ const Product = ({ items }) => {
                     <div className="row row-gap-2">
                         {product.length > 0 ? (
                             product.map((item) => (
-                                <div className="col-md-3 p-4" key={item.id}>
+                                <div className="col-lg-3 col-md-4 pad-4 wishlist-prp" key={item.id} >
                                     <Link to={`/ProductDetail/${item.id}/${id}`} className="hp-swiper-c-wrapper">
                                         <div>
                                             <img src={item.thumbnail} alt={item.title} width="100%" />
@@ -51,11 +52,12 @@ const Product = ({ items }) => {
                                             </div>
                                         </div>
                                     </Link>
+                                    <Wishlistbtn handelWishlist={handelWishlist} id={item.id} category={id} wishlistbtncolor={wishlistbtncolor} />
                                 </div>
                             ))
                         ) : (
-                            <div className="nodroduct-wrap">
-                                <h3>No Product Found</h3>
+                            <div className="no-prod-wrapper">
+                                <h1>No Product</h1>
                             </div>
                         )}
                     </div>
@@ -67,6 +69,8 @@ const Product = ({ items }) => {
 
 Product.propTypes = {
     items: PropTypes.array.isRequired,
+    handelWishlist: PropTypes.func,
+    wishlistbtncolor:PropTypes.func
 };
 
 export default Product;

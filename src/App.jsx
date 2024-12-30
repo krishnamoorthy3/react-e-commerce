@@ -1323,8 +1323,8 @@ const App = () => {
     const [wishlist,setWishList]=useState(JSON.parse(localStorage.getItem("wishlist"))||[])
     const localStorages=(name,data)=>{
         localStorage.setItem(name,JSON.stringify(data))
-        setCartitem(data)
     }
+    
     const handelcart=(id,category)=>{
         const existingItem = cartitem.find(item => item.id === id);
         if (existingItem) {
@@ -1334,6 +1334,7 @@ const App = () => {
                     : item
             );
             localStorages("cartitem",updatedCart);
+            setCartitem(updatedCart)
         } else {
             const newCart = {
                 id: id,
@@ -1342,18 +1343,42 @@ const App = () => {
             };
             const productdata=[...cartitem, newCart]
             localStorages("cartitem",productdata)
+            setCartitem(productdata)
         }
+    }
+
+    const handelWishlist =(id,category) =>{
+        const existingItem = wishlist.findIndex(item => item.id === id);
+        
+        if (existingItem!=-1) {
+            const filterwishlist=wishlist.filter(item => item.id != id);
+            localStorages("wishlist",filterwishlist);
+            setWishList(filterwishlist)
+        } else {
+            const wishitemnew = {
+                id: id,
+                category: category,
+                cartquantity: 1,
+            };
+            const productdata=[...wishlist, wishitemnew]
+            localStorages("wishlist",productdata)
+            setWishList(productdata)
+        }
+    }
+    const wishlistbtncolor=(id)=>{
+        const existingColor=wishlist.findIndex(item=>item.id==id)
+        return existingColor
     }
     return (
         <>
-            <Navbar cartitem={cartitem} />
-            <main>
+            <Navbar cartitem={cartitem} wishlist={wishlist}/>
+            <main >
                 <Routes>
-                    <Route path="/" element={<Home items={items} />} />
-                    <Route path="/Product/:id" element={<Product items={items} />}/>
-                    <Route path="/Cart" element={<Cart items={items} handelcart={handelcart} cartitem={cartitem} localStorages={localStorages}/>}  />
-                    <Route path="/WishList" element={<WishList/>} />
-                    <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} handelcart={handelcart}/>} />
+                    <Route path="/" element={<Home items={items} setItems={setItems} />} />
+                    <Route path="/Product/:id" element={<Product items={items} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />}/>
+                    <Route path="/Cart" element={<Cart items={items} handelcart={handelcart} setCartitem={setCartitem} cartitem={cartitem} localStorages={localStorages}/>}  />
+                    <Route path="/WishList" element={<WishList wishlist={wishlist} setWishList={setWishList}  items={items} localStorages={localStorages}  handelcart={handelcart} />} />
+                    <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} handelcart={handelcart} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />} />
                 </Routes>
             </main>
             <Footer/>

@@ -13,10 +13,10 @@ const FilterComp = ({setProduct,product}) => {
             <section className="my-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-2">
+                        <div className="col-lg-3 col-md-4">
                             <button onClick={handelhightolow} className="sort-btn"><FaSortAmountUp/>Sort Price High to Low</button>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-lg-3 col-md-5">
                             <button onClick={handellowtoHign} className="sort-btn"><FaSortAmountDownAlt />Sort Price Low to High</button>
                         </div>
                     </div>

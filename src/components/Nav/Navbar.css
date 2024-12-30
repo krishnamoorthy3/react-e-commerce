@@ -53,3 +53,13 @@
     left: 100%;
     top: -10%;
 }
+
+@media only screen and (max-width:767px){
+    .navbar-links-ul{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .navbar-search-wrapper .nav-scr-inp {
+        width: 60%;
+    }
+}

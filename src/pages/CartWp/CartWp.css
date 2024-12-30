@@ -23,4 +23,11 @@
 .cartinc-inp{
     border: 1px solid #808080;
     width: 55px;
+    text-align: center;
+}
+.wish-content-wrapper-link{
+    text-decoration: none;
+}
+.wish-content-wrapper-link:hover{
+    opacity: .9;
 }

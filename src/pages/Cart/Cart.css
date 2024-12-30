@@ -20,3 +20,8 @@
 .ft-c-g{
     color: #388e3c !important;
 }
+@media only screen and (max-width:767px){
+    .wish-content-wrapper{
+        padding-bottom: 30px;
+    }
+}

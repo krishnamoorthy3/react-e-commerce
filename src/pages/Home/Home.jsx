@@ -94,7 +94,7 @@ const Home = ({ items }) => {
                     <h4 className="mb-5">
                         <strong>Recommended Products</strong>
                     </h4>
-                    <Productswiper products={Recommended} category="mobile" />
+                    <Productswiper products={Recommended} category="mobile" wishlistb={false} />
                 </div>
             </section>
             <section className="my-5">
@@ -102,7 +102,7 @@ const Home = ({ items }) => {
                     <h4 className="mb-5">
                         <strong>Fashion Products</strong>
                     </h4>
-                    <Productswiper products={Fashion} category="fashion"/>
+                    <Productswiper products={Fashion} category="fashion" wishlistb={false}/>
                 </div>
             </section>
             <section className="my-5">
@@ -110,7 +110,7 @@ const Home = ({ items }) => {
                     <h4 className="mb-5">
                         <strong>Best Sellers</strong>
                     </h4>
-                    <Productswiper products={electronics} category="electronics"/>
+                    <Productswiper products={electronics} category="electronics" wishlistb={false}/>
                 </div>
             </section>
         </>

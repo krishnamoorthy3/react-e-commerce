@@ -1,7 +1,7 @@
 .hp-disc-conte{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-weight: bold;
 }
 .hp-disc-conte p{
@@ -74,4 +74,38 @@
 
 .txt-dash{
     text-decoration: line-through;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+.no-prod-wrapper{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media  only screen and (max-width:767px) {
+    .hp-disc-conte{
+        gap: 10px;
+        font-size: 13px;
+    }
+    .hp-swip-th-title{
+        font-size: 14px;
+    }
+    .marg-t-2{
+        margin-top: 40px;
+    }
 }

@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import "./productswiper.css"
 import PropTypes from 'prop-types';
-const Productswiper = ({ products,category }) => {
+const Productswiper = ({ products,category,handelWishlist,wishlistbtncolor,wishlistb}) => {
     return (
         <>
             <Swiper
@@ -18,6 +18,11 @@ const Productswiper = ({ products,category }) => {
                 breakpoints={{
                         300: {
                         slidesPerView: 1,
+
+                        },
+                        370: {
+                        slidesPerView: 2,
+                        spaceBetween:10,
                         },
                         768: {
                         slidesPerView: 3,
@@ -45,7 +50,7 @@ const Productswiper = ({ products,category }) => {
                                 </div>
                             </div>
                         </Link>
-                        <Wishlistbtn/>
+                        {wishlistb&& <Wishlistbtn handelWishlist={handelWishlist} id={item.id} category={category} wishlistbtncolor={wishlistbtncolor}  />}
                     </SwiperSlide>
                 )}
             </Swiper>
@@ -64,5 +69,9 @@ Productswiper.propTypes = {
         })
     ).isRequired,
     category: PropTypes.string.isRequired,
+    handelWishlist: PropTypes.func,
+    wishlistbtncolor: PropTypes.func,
+    wishlistb: PropTypes.bool,
 };
+
 export default Productswiper

@@ -5,7 +5,7 @@ import brndimg from "/src/assets/iphone/b.webp"
 import "./ProductDetail.css"
 import PropTypes from "prop-types";
 import CartButton from "../CartButton/CartButton"
-const ProductDetail = ({ items ,handelcart}) => {
+const ProductDetail = ({ items ,handelcart,handelWishlist,wishlistbtncolor}) => {
     const { id, cat } = useParams()
     const releatedproduct = items.filter(item => (item.id != id && item.category.includes(cat) || item.id != id && item.description.includes(cat)));
     const productdetail = items.filter(item => item.id == id)
@@ -14,11 +14,11 @@ const ProductDetail = ({ items ,handelcart}) => {
         <>
             <section className="my-5">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-5">
-                            <div className="proddetail-of-y"> <ProductDSwip productDetail={productdetail[0].images}  /></div>
+                    <div className="row row-gap-4">
+                        <div className="col-lg-5 col-md-12 text-center">
+                            <div className="proddetail-of-y"> <ProductDSwip productDetail={productdetail[0].images} id={id*1} category={cat} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} /></div>
                         </div>
-                        <div className="col-md-7">
+                        <div className="col-lg-7 col-md-12">
                             {productdetail.map(item =>
                                 <div className="product-detail-cont-wrapper" key={item.id}>
                                     <h4>{item.title}</h4>
@@ -131,7 +131,7 @@ const ProductDetail = ({ items ,handelcart}) => {
             <section className="my-5 py-5">
                 <div className="container">
                     <h4 className="my-3">Similar Products</h4>
-                    <Productswiper products={releatedproduct} category={cat} />
+                    <Productswiper products={releatedproduct} category={cat} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} wishlistb={true} />
                 </div>
             </section>
         </>
@@ -144,6 +144,8 @@ ProductDetail.propTypes = {
             description: PropTypes.string.isRequired
         })
     ).isRequired,
-    handelcart:PropTypes.func
+    handelcart:PropTypes.func,
+    handelWishlist:PropTypes.func,
+    wishlistbtncolor:PropTypes.func,
 }
 export default ProductDetail
