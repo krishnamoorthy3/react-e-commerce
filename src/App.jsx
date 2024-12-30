@@ -1,4 +1,8 @@
-
+import img1 from "/src/assets/iphone/1.jpg"
+import img2 from "/src/assets/iphone/2.jpg"
+import img3 from "/src/assets/iphone/3.jpg"
+import img4 from "/src/assets/iphone/4.jpg"
+import img5 from "/src/assets/iphone/5.jpg"
 
 import Navbar from "./components/Nav/Navbar.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -23,13 +27,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/motorola-brand.webp",
                 "category": "mobile electronics phone smartphone ",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -75,13 +79,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/samsung.webp",
                 "category": "mobile electronics phone smartphone ",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -128,13 +132,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/poco.webp",
                 "category": "mobile electronics phone smartphone poco",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
 
                 ],
                 "spec": {
@@ -182,13 +186,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/google.webp",
                 "category": "mobile electronics phone smartphone google pixel",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -234,13 +238,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/vivo.webp",
                 "category": "mobile electronics phone smartphone vivo t3",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -286,13 +290,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/motorola-brand.webp",
                 "category": "mobile electronics phone smartphone ",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -338,13 +342,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/samsung.webp",
                 "category": "mobile electronics phone smartphone ",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -391,13 +395,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/poco.webp",
                 "category": "mobile electronics phone smartphone poco",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -444,13 +448,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/google.webp",
                 "category": "mobile electronics phone smartphone google pixel",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -496,13 +500,13 @@ const App = () => {
                 "stock": 94,
                 "brandimg": "/assets/images/prod-img/vivo.webp",
                 "category": "mobile electronics phone smartphone vivo t3",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -548,13 +552,13 @@ const App = () => {
                 "stock": 120,
                 "brandimg": "/assets/images/brand-img/cottonworld.webp",
                 "category": "fashion clothing men shirts casual slim-fit",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -593,13 +597,13 @@ const App = () => {
                 "stock": 85,
                 "brandimg": "/assets/images/brand-img/prettyflora.webp",
                 "category": "fashion clothing women dresses casual floral",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -637,13 +641,13 @@ const App = () => {
                 "stock": 150,
                 "brandimg": "/assets/images/brand-img/sportshoe.webp",
                 "category": "fashion footwear sports casual sneakers",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -677,13 +681,13 @@ const App = () => {
                 "stock": 100,
                 "brandimg": "/assets/images/brand-img/denim.webp",
                 "category": "fashion clothing men denim jeans",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -717,13 +721,13 @@ const App = () => {
                 "stock": 60,
                 "brandimg": "/assets/images/brand-img/leathervibes.webp",
                 "category": "fashion accessories women bags leather tote",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -756,13 +760,13 @@ const App = () => {
                 "stock": 200,
                 "brandimg": "/assets/images/brand-img/leatherlux.webp",
                 "category": "fashion accessories men belts leather classic",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -793,13 +797,13 @@ const App = () => {
                 "stock": 80,
                 "brandimg": "/assets/images/brand-img/shadez.webp",
                 "category": "fashion accessories unisex sunglasses polarized outdoor",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -832,13 +836,13 @@ const App = () => {
                 "stock": 90,
                 "brandimg": "/assets/images/brand-img/ethnicstyle.webp",
                 "category": "fashion clothing women ethnic kurta casual festive",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -874,13 +878,13 @@ const App = () => {
                 "stock": 50,
                 "brandimg": "/assets/images/brand-img/winterwear.webp",
                 "category": "fashion clothing men jackets winter wool",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -913,13 +917,13 @@ const App = () => {
                 "stock": 70,
                 "brandimg": "/assets/images/brand-img/jeweluxe.webp",
                 "category": "fashion accessories women jewelry pearl necklace",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -949,13 +953,13 @@ const App = () => {
                 "stock": 50,
                 "brandimg": "/assets/images/brand-img/samsung.webp",
                 "category": "electronics smartphone samsung mobile phone",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -993,13 +997,13 @@ const App = () => {
                 "stock": 25,
                 "brandimg": "/assets/images/brand-img/apple.webp",
                 "category": "electronics laptop apple macbook air",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1033,13 +1037,13 @@ const App = () => {
                 "stock": 70,
                 "brandimg": "/assets/images/brand-img/sony.webp",
                 "category": "electronics headphones sony wireless noise-cancelling",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1070,13 +1074,13 @@ const App = () => {
                 "stock": 30,
                 "brandimg": "/assets/images/brand-img/lg.webp",
                 "category": "electronics tv lg oled smart 4k",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1104,13 +1108,13 @@ const App = () => {
                 "stock": 40,
                 "brandimg": "/assets/images/brand-img/dyson.webp",
                 "category": "electronics appliances vacuum dyson cleaning",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1139,13 +1143,13 @@ const App = () => {
                 "stock": 15,
                 "brandimg": "/assets/images/brand-img/canon.webp",
                 "category": "electronics camera canon mirrorless photography",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1178,13 +1182,13 @@ const App = () => {
                 "stock": 60,
                 "brandimg": "/assets/images/brand-img/bose.webp",
                 "category": "electronics audio bose bluetooth speaker",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1214,13 +1218,13 @@ const App = () => {
                 "stock": 40,
                 "brandimg": "/assets/images/brand-img/apple.webp",
                 "category": "electronics tablet apple ipad pro",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1252,13 +1256,13 @@ const App = () => {
                 "stock": 90,
                 "brandimg": "/assets/images/brand-img/fitbit.webp",
                 "category": "electronics fitness tracker fitbit smartwatch",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
@@ -1290,13 +1294,13 @@ const App = () => {
                 "stock": 80,
                 "brandimg": "/assets/images/brand-img/logitech.webp",
                 "category": "electronics accessories logitech mouse wireless",
-                "thumbnail": "/src/assets/iphone/1.jpg",
+                "thumbnail": img1,
                 "images": [
-                    "/src/assets/iphone/1.jpg",
-                    "/src/assets/iphone/2.jpg",
-                    "/src/assets/iphone/3.jpg",
-                    "/src/assets/iphone/4.jpg",
-                    "/src/assets/iphone/5.jpg"
+                    img1,
+                    img2,
+                    img3,
+                    img4,
+                    img5
                 ],
                 "spec": {
                     "General": {
