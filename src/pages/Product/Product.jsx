@@ -30,7 +30,7 @@ const Product = ({ items ,handelWishlist , wishlistbtncolor}) => {
             <section className="my-5">
                 <div className="container">
                     <div className="row row-gap-2">
-                        {product.length > 0 ? (
+                        {product.length? (
                             product.map((item) => (
                                 <div className="col-lg-3 col-md-4 pad-4 wishlist-prp" key={item.id} >
                                     <Link to={`/ProductDetail/${item.id}/${id}`} className="hp-swiper-c-wrapper">
