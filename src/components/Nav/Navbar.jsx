@@ -1,13 +1,18 @@
 
 import { Link,NavLink } from "react-router-dom";
 import Logoimg from "/src/assets/logo.png";
+import Logow from "/src/assets/logo-w.png";
 import "./Navbar.css";
 import { IoSearch } from "react-icons/io5";
 import { useState,useEffect } from "react";
 import { useNavigate  } from "react-router-dom";
 import PropTypes from "prop-types";
-const Navbar = ({cartitem,wishlist}) => {
+import { PiMoonStarsFill } from "react-icons/pi";
+import { FiSun } from "react-icons/fi";
+const Navbar = ({cartitem,wishlist,handelTheme,theme}) => {
     const [searchprod,setSearchprod]=useState("")
+   
+    
     const navigate = useNavigate();
     const searchProduct=(e)=>{
         e.preventDefault()
@@ -37,7 +42,7 @@ const Navbar = ({cartitem,wishlist}) => {
                         <div className="row align-items-center">
                             <div className="col-lg-2 col-md-3 col-5 navbar-logo">
                                 <Link to="/">
-                                    <img src={Logoimg} alt="Logo" width="100%" />
+                                    <img src={theme?Logow:Logoimg} alt="Logo" width="100%" />
                                 </Link>
                             </div>
                             {windowWidth>= 768 && <div className="col-lg-6 col-md-4 navbar-search-wrapper text-center">
@@ -60,6 +65,11 @@ const Navbar = ({cartitem,wishlist}) => {
                                         <NavLink to="/WishList" className="nav-link nav-cqpa">WishList
                                         <span className="nav-cq">{wishlist.length}</span></NavLink>
                                     </li>
+                                    <li>
+                                        <button onClick={handelTheme} className="nav-link nav-cqpa">
+                                            { theme? <FiSun/>:<PiMoonStarsFill/>}
+                                        </button>
+                                    </li>
                                 </ul>
                             </div>
                             {windowWidth<= 767 && <div className="col-lg-6 col-12 navbar-search-wrapper text-center mt-4">
@@ -78,5 +88,7 @@ const Navbar = ({cartitem,wishlist}) => {
 Navbar.propTypes={
     cartitem:PropTypes.array.isRequired,
     wishlist:PropTypes.array.isRequired,
+    handelTheme:PropTypes.func,
+    theme:PropTypes.bool,
 }
 export default Navbar;

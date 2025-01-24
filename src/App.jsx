@@ -15,6 +15,13 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import "./App.css"
 const App = () => {
+    const [theme,setTheme]=useState(JSON.parse(localStorage.getItem("theme"))||false)
+    
+    const handelTheme=()=>{
+        console.log("theme",theme);
+        localStorage.setItem('theme',JSON.stringify(!theme))
+        setTheme(!theme)
+    }
     const [items, setItems] = useState(
         [
             {
@@ -1375,17 +1382,19 @@ const App = () => {
     }
     return (
         <>
-            <Navbar cartitem={cartitem} wishlist={wishlist}/>
-            <main >
-                <Routes>
-                    <Route path="/" element={<Home items={items} setItems={setItems} />} />
-                    <Route path="/Product/:id" element={<Product items={items} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />}/>
-                    <Route path="/Cart" element={<Cart items={items} handelcart={handelcart} setCartitem={setCartitem} cartitem={cartitem} localStorages={localStorages}/>}  />
-                    <Route path="/WishList" element={<WishList wishlist={wishlist} setWishList={setWishList}  items={items} localStorages={localStorages}  handelcart={handelcart} />} />
-                    <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} handelcart={handelcart} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />} />
-                </Routes>
-            </main>
-            <Footer/>
+            <div className={ theme?'dark-color':'light-color'} id="themechange">
+                <Navbar cartitem={cartitem} wishlist={wishlist} handelTheme={handelTheme} theme={theme}/>
+                <main >
+                    <Routes>
+                        <Route path="/" element={<Home items={items} setItems={setItems} />} />
+                        <Route path="/Product/:id" element={<Product items={items} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />}/>
+                        <Route path="/Cart" element={<Cart items={items} handelcart={handelcart} setCartitem={setCartitem} cartitem={cartitem} localStorages={localStorages}/>}  />
+                        <Route path="/WishList" element={<WishList wishlist={wishlist} setWishList={setWishList}  items={items} localStorages={localStorages}  handelcart={handelcart} />} />
+                        <Route path="/ProductDetail/:id/:cat" element={<ProductDetail items={items} handelcart={handelcart} handelWishlist={handelWishlist} wishlistbtncolor={wishlistbtncolor} />} />
+                    </Routes>
+                </main>
+                <Footer/>
+            </div>
         </>
 
     );

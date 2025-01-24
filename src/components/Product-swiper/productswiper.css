@@ -1,6 +1,6 @@
 
 .hp-swiper-c-wrapper{
-    border:1px solid #dfdfdf;
+    border:1px solid var(--border-color-primary);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
@@ -20,10 +20,10 @@
     text-decoration: line-through;
 }
 .hp-disc-conte p:first-child{
-    color:#30373e ;
+    color:var(--font-color-primary) ;
 }
 .hp-disc-conte p:last-child{
-    color: #388e3c;
+    color: var(--font-color-third);
 }
 .swiper-button-prev:after, .swiper-button-next:after{
     font-size: 12px ;

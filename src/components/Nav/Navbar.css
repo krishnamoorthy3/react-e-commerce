@@ -7,7 +7,8 @@
 
 .navbar-wrapper{
     padding: 20px 0;
-    box-shadow: 0 8px 6px -4px #88888838;
+    /* box-shadow: 0 8px 6px -4px #88888838; */
+    background: var(--background-color-for);
 }
 .navbar-search-wrapper .nav-scr-inp,
 .navbar-search-wrapper .nav-scr-btn{
@@ -32,8 +33,9 @@
     outline: none;
 }
 .navbar-links-ul li .nav-link{
-    color: #000;
+    color: var(--font-color-primary);
     text-align: none;
+    font-weight: 600;
 }
 
 .nav-cqpa{
@@ -43,9 +45,9 @@
     position: absolute;
     height: 18px;
     width: 18px;
-    background: #000;
+    background: var(--background-color-sec);
     border-radius: 100%;
-    color: #fff;
+    color: var(--font-color-br);
     display: flex;
     align-items: center;
     justify-content: center;

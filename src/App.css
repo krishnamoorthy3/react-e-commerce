@@ -12,10 +12,10 @@
     text-decoration: line-through;
 }
 .hp-disc-conte p:first-child{
-    color:#30373e ;
+    color:var(--font-color-primary) ;
 }
 .hp-disc-conte p:last-child{
-    color: #388e3c;
+    color: var(--font-color-third);
 }
 
 .hp-swip-th-title{
@@ -29,8 +29,8 @@
 
 .cart-btn{
     border: none;
-    background: #000;
-    color: #fff;
+    background: var(--background-color-sec);
+    color: var(--font-color-br);
     padding: 6px 20px ;
     display: flex;
     align-items: center;
@@ -50,8 +50,8 @@
     height: 30px;
     width: 30px;
     border-radius:100% ;
-    color: #fff;
-    background: #7b7f83;
+    color: var(--font-color-br);
+    background: var(--background-color-third);
 }
 
 .wishlist-prp{

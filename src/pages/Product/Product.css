@@ -1,11 +1,11 @@
 .sort-btn{
     font-weight: 700;
     font-size: 13px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid var(--border-color-primary);
     padding: 4px 10px;
     border-radius: 13px;
     background: transparent;
-    color: #30373e;
+    color: var(--font-color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
 
 
 .hp-swiper-c-wrapper{
-    border:1px solid #dfdfdf;
+    border:1px solid var(--border-color-primary);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
@@ -34,10 +34,10 @@
     text-decoration: line-through;
 }
 .hp-disc-conte p:first-child{
-    color:#30373e ;
+    color:var(--font-color-primary) ;
 }
 .hp-disc-conte p:last-child{
-    color: #388e3c;
+    color: var(--font-color-third);
 }
 
 .hp-swip-th-title{

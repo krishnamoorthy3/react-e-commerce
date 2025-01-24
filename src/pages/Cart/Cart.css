@@ -2,7 +2,7 @@
     height: 100vh;
 }
 .border-b-dot{
-    border-bottom: 1px dotted #c3c3c3;
+    border-bottom: 1px dotted var(--border-color-primary);
 }
 .pr-detail-wrapper{
     padding: 10px;
@@ -13,12 +13,12 @@
     justify-content: space-between;
 }
 .prd-pf p{
-    color: #000;
+    color: var(--font-color-b);
     font-weight: 500;
 }
 
 .ft-c-g{
-    color: #388e3c !important;
+    color: var(--font-color-third) !important;
 }
 @media only screen and (max-width:767px){
     .wish-content-wrapper{
