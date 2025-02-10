@@ -23,3 +23,13 @@
         margin-top: 25px;
     }
 }
+
+
+.custom-large-image{
+    position: fixed !important;
+    z-index: 9999  !important;
+    top: 1%  !important;
+    left: 1%  !important;
+    width: 500px  !important;
+    height: 500px  !important;
+}
