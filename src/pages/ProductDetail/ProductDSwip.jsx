@@ -8,7 +8,6 @@ import "./ProductDswip.css"
 import PropTypes from 'prop-types';
 import Wishlistbtn from "../WishListbtn/Wishlistbtn"
 import ReactImageMagnify from 'react-image-magnify';
-
 const ProductDSwip = ({ productDetail, handelWishlist, id, category, wishlistbtncolor }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -68,21 +67,21 @@ const ProductDSwip = ({ productDetail, handelWishlist, id, category, wishlistbtn
 
                 </div>
                 <div className="col-md-10 wishlist-prp marg-t-2">
-                    <Swiper modules={[Thumbs]} thumbs={{ swiper: thumbsSwiper }} id='main-swip-img' >
+                    <Swiper modules={[Thumbs]} thumbs={{ swiper: thumbsSwiper }} id='main-swip-img ' className='pdimgss' >
                         {productDetail.map((item, index) =>
                             <SwiperSlide key={`product${index}`}>
                                 <div>
                                     {/* <img src={item} alt={`product${index}`} className='w-100' /> */}
                                     <ReactImageMagnify {...{
                                         smallImage: {
-                                            alt: 'Wristwatch by Ted Baker London',
+                                            alt: `product${index}`,
                                             isFluidWidth: true,
                                             src: item
                                         },
                                         largeImage: {
                                             src: item,
-                                            width: 800,
-                                            height: 800
+                                            width: 900,
+                                            height: 1000
                                         },
                                         enlargedImageContainerClassName: "custom-large-image" // Add custom class
                                     }} />
@@ -98,7 +97,7 @@ const ProductDSwip = ({ productDetail, handelWishlist, id, category, wishlistbtn
                 </div>
             </div>
 
-
+    
 
         </>
     )
